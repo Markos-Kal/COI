@@ -19,35 +19,18 @@ void dfs(int s, int n, int p, int depth)
 }
 
 int main() {
-    int T = 20;
-    while(T--)
+    cin >> n;
+    for(int i = 0; i < n - 1; i++)
     {
-        string tci = to_string(20 - T);
-        tci += "_in.txt";
-        generateRandomTree(5000, tci);
-        ifstream fin(tci);
-        fin >> n;
-        for(int i = 0; i < n - 1; i++)
-        {
-            int x, y;
-            fin >> x >> y;
-            al[x].push_back(y);
-            al[y].push_back(x);
-        }
-        string tco = to_string(20 - T);
-        tco += "_out.txt";
-        ofstream fout(tco);
-        /*for(int i = 1; i <= n; i++)
-        {
-            dfs(i, i, -1, 0);
-            fout << ans[i] << endl;
-        }*/
-        for(int i = 1; i <= n; i++){
-            ans[i] = n - 1 - al[i].size();
-            fout << ans[i] << endl;
-        }
-        for (int i = 1; i <= n; i++)
-            ans[i] = 0;
+        int x, y;
+        cin >> x >> y;
+        al[x].push_back(y);
+        al[y].push_back(x);
+    }
+    for(int i = 1; i <= n; i++)
+    {
+        dfs(i, i, -1, 0);
+        cout << ans[i] << endl;
     }
 
 }
