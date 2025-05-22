@@ -1,6 +1,6 @@
 # Cypriot Olympiad in Informatics - Problems & Solutions
 
-This repository contains problem statements and solution codes for tasks I have contributed to the Cypriot Olympiad in Informatics (CYOI). These problems were designed to challenge participants in algorithmic thinking and competitive programming.
+This repository contains problem statements and solution codes for tasks I have contributed to the Cyprus Olympiad in Informatics (COI). These problems were designed to challenge participants in algorithmic thinking and competitive programming.
 
 ## Contents
 - **Problem Statements**: PDF or markdown files detailing the problems, including input/output specifications and constraints.
